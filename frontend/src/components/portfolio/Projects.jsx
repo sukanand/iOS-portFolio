@@ -184,7 +184,28 @@ function ProjectCard({ project }) {
             transition={{ type: "spring", stiffness: 200, damping: 22 }}
             className="w-full flex items-center justify-center"
           >
-            <PhoneMockup accent={project.accent} label={project.name} />
+            {project.imageUrl ? (
+              <div className="relative w-full max-w-[260px] mx-auto">
+                <div
+                  className="absolute -inset-10 rounded-full blur-3xl opacity-60"
+                  style={{
+                    background:
+                      project.accent === "purple"
+                        ? "radial-gradient(closest-side, rgba(124,58,237,0.55), transparent 70%)"
+                        : "radial-gradient(closest-side, rgba(10,132,255,0.55), transparent 70%)",
+                  }}
+                />
+                <img
+                  src={project.imageUrl}
+                  alt={`${project.name} screenshot`}
+                  className="relative w-full h-auto drop-shadow-[0_30px_60px_rgba(10,132,255,0.35)]"
+                  loading="lazy"
+                  data-testid={`project-image-${project.id}`}
+                />
+              </div>
+            ) : (
+              <PhoneMockup accent={project.accent} label={project.name} />
+            )}
           </motion.div>
         </div>
       </div>

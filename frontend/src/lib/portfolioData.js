@@ -116,6 +116,7 @@ export const PROJECTS = [
     name: "Banco Popular Dominicano",
     category: "Banking Application",
     appStoreUrl: "https://apps.apple.com/in/app/banco-popular-dominicano/id583475424",
+    imageUrl: "/assets/bpd.png",
     description:
       "Developed secure mobile banking features including account management, authentication, onboarding, complaint management, and profile services.",
     technologies: ["Swift", "UIKit", "MVVM", "Firebase", "REST APIs", "URLSession"],
@@ -134,6 +135,7 @@ export const PROJECTS = [
     name: "APP Azul",
     category: "Merchant Services Platform",
     appStoreUrl: "https://apps.apple.com/dm/app/app-azul/id1522098862",
+    imageUrl: "/assets/appazul.png",
     description:
       "Merchant application supporting onboarding, payments, dashboards, push notifications, and transaction tracking.",
     technologies: ["SwiftUI", "UIKit", "Firebase", "REST APIs", "MVVM"],
@@ -153,6 +155,7 @@ export const PROJECTS = [
     name: "MyTripCV",
     category: "Travel & Social Networking",
     appStoreUrl: "https://apps.apple.com/in/app/mytripcv/id6771650958",
+    imageUrl: "/assets/mytripcv.png",
     badge: "Personal Project",
     description:
       "An independently developed travel and social networking application that allows users to share journeys, interact with fellow travelers, plan itineraries, and preserve travel memories.",
