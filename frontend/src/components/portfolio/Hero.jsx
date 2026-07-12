@@ -199,9 +199,7 @@ export default function Hero() {
             >
               <a
                 href={PROFILE.resumeUrl}
-                target="_blank"
-                rel="noreferrer"
-                download
+                download="SukanandYedle.pdf"
                 data-testid="hero-download-btn"
                 className="group inline-flex items-center gap-2 rounded-full bg-[#0A84FF] px-5 py-3 text-[14px] font-medium text-white hover:brightness-110 transition-[filter,transform] active:scale-[0.98] glow-blue"
               >
@@ -245,10 +243,7 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Right */}
-          <div className="relative">
-            <PhoneVisual />
-          </div>
+          {/* Right — removed per request */}
         </div>
       </div>
     </section>
