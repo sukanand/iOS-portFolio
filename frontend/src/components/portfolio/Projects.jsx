@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { PlayCircle, Sparkles, ArrowUpRight, ImageIcon } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { PROJECTS } from "../../lib/portfolioData";
 
 const SectionHeader = ({ eyebrow, title, subtitle }) => (
@@ -147,41 +147,7 @@ function ProjectCard({ project }) {
             </div>
           </div>
 
-          {/* Featured extras */}
-          {isFeatured && (
-            <div className="mt-8 grid sm:grid-cols-2 gap-3">
-              <div className="rounded-2xl glass overflow-hidden">
-                <div className="aspect-[16/10] relative"
-                  style={{
-                    background:
-                      "radial-gradient(120% 80% at 30% 0%, rgba(10,132,255,0.45), transparent 55%), radial-gradient(120% 80% at 80% 100%, rgba(124,58,237,0.45), transparent 55%), #05060a",
-                  }}
-                >
-                  <div className="absolute inset-0 grid place-items-center text-white/50">
-                    <div className="flex flex-col items-center gap-2">
-                      <ImageIcon size={22} />
-                      <div className="text-[11px] uppercase tracking-widest">Gallery</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="rounded-2xl glass overflow-hidden">
-                <div className="aspect-[16/10] relative"
-                  style={{
-                    background:
-                      "radial-gradient(120% 80% at 70% 30%, rgba(124,58,237,0.5), transparent 55%), #08060a",
-                  }}
-                >
-                  <div className="absolute inset-0 grid place-items-center text-white/60">
-                    <div className="flex flex-col items-center gap-2">
-                      <PlayCircle size={30} />
-                      <div className="text-[11px] uppercase tracking-widest">Video Placeholder</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
+          {/* Featured extras removed per request */}
         </div>
 
         {/* Visual */}

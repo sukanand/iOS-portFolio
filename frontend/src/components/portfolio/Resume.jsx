@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FileText, Download } from "lucide-react";
+import { PROFILE } from "../../lib/portfolioData";
 
 export default function Resume() {
   return (
@@ -37,8 +38,10 @@ export default function Resume() {
             </p>
 
             <a
-              href="#"
-              onClick={(e) => e.preventDefault()}
+              href={PROFILE.resumeUrl}
+              target="_blank"
+              rel="noreferrer"
+              download
               data-testid="resume-download-btn"
               className="mt-8 inline-flex items-center gap-2 rounded-full bg-white text-black px-6 py-3.5 text-[14px] font-medium hover:bg-white/90 transition-colors active:scale-[0.98] shadow-[0_10px_40px_-10px_rgba(255,255,255,0.5)]"
             >

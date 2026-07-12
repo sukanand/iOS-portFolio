@@ -37,17 +37,22 @@ export default function About() {
           >
             <div className="relative aspect-[4/5] rounded-[28px] overflow-hidden glass p-[1px]">
               <div className="relative h-full w-full rounded-[27px] overflow-hidden">
+                <img
+                  src={PROFILE.photoUrl}
+                  alt={PROFILE.name}
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
                 <div
                   className="absolute inset-0"
                   style={{
                     background:
-                      "radial-gradient(120% 80% at 30% 0%, rgba(10,132,255,0.35), transparent 55%), radial-gradient(120% 80% at 80% 100%, rgba(124,58,237,0.35), transparent 55%), linear-gradient(180deg, #0a0a0c, #050506)",
+                      "linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.85) 100%)",
                   }}
                 />
                 <div className="absolute inset-0 noise-overlay" />
                 <div className="absolute inset-0 flex items-end p-6">
                   <div className="glass rounded-2xl p-4 w-full">
-                    <div className="text-[11px] uppercase tracking-widest text-white/50">
+                    <div className="text-[11px] uppercase tracking-widest text-white/60">
                       Based in
                     </div>
                     <div className="mt-1 text-white text-[15px] font-medium">

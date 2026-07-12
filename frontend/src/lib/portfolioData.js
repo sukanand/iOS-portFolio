@@ -9,6 +9,10 @@ export const PROFILE = {
   phone: "+91 98XXXXXXXX",
   linkedin: "https://linkedin.com/in/sukanand-yedle",
   github: "https://github.com/sukanand-yedle",
+  photoUrl:
+    "https://customer-assets.emergentagent.com/job_mobile-engineer-2/artifacts/4zfgtkme_Screenshot%202026-07-12%20at%205.02.02%E2%80%AFPM.png",
+  resumeUrl:
+    "https://customer-assets.emergentagent.com/job_mobile-engineer-2/artifacts/bxx19j2p_SukanandYedle%20%282%29.pdf",
   description:
     "Building secure, scalable, and high-performance iOS applications with over five years of experience delivering enterprise solutions in Banking, FinTech, and Merchant Services.",
 };
