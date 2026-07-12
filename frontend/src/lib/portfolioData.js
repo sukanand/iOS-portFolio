@@ -149,8 +149,8 @@ export const PROJECTS = [
     featured: false,
   },
   {
-    id: "travelcv",
-    name: "TravelCV",
+    id: "mytripcv",
+    name: "MyTripCV",
     category: "Travel & Social Networking",
     badge: "Personal Project",
     description:

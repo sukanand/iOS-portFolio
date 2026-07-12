@@ -40,7 +40,8 @@ export default function About() {
                 <img
                   src={PROFILE.photoUrl}
                   alt={PROFILE.name}
-                  className="absolute inset-0 h-full w-full object-cover"
+                  loading="eager"
+                  className="absolute inset-0 h-full w-full object-cover object-top"
                 />
                 <div
                   className="absolute inset-0"
