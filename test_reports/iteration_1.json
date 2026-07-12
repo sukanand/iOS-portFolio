@@ -1,0 +1,28 @@
+{
+  "summary": "First-finish smoke tests for Sukanand Yedle portfolio. Backend endpoints (GET /api/, POST /api/contact, GET /api/contact) all functioning as expected with proper 422 validation for bad/missing input. Frontend loads, hero name renders, all 8 nav links visible and scroll to sections, all sections present, projects include TravelCV, skills has 6 cards, contact form submits successfully (success toast shown, fields cleared, MongoDB save confirmed via GET /api/contact), mobile menu toggle works at 390px viewport.",
+  "tested_scope": ["frontend", "backend", "integration"],
+  "passed": [
+    "GET /api/ -> 200 with message 'Sukanand Yedle Portfolio API is running'",
+    "POST /api/contact valid payload -> 200 with id + created_at",
+    "POST /api/contact invalid email -> 422 (pydantic EmailStr)",
+    "POST /api/contact missing fields (email, message) -> 422",
+    "GET /api/contact -> 200 list, includes just-created message, sorted desc",
+    "Homepage loads without page errors; hero-name shows 'Sukanand Yedle'",
+    "Sticky navbar visible with all 8 nav-link-{home,about,skills,experience,projects,achievements,resume,contact}",
+    "Section anchors #about #skills #experience #projects #achievements #resume #contact all present",
+    "Skills section renders 6 cards",
+    "Projects section includes 'TravelCV'",
+    "Contact form (data-testid=contact-form) submits to /api/contact and shows toast 'Message sent — I'll get back to you.'",
+    "Contact form fields clear after successful submit",
+    "Mobile viewport (390x844): mobile-menu-toggle visible and mobile-menu opens after click"
+  ],
+  "failed": [],
+  "notes": [
+    "Empty/invalid email validation is handled by HTML5 native validation (input type=email + required) rather than an explicit error toast; backend still enforces via 422. Acceptable for MVP.",
+    "Achievements animated counters and full section visual polish not deeply validated (deferred to full QA)."
+  ],
+  "action_items": [],
+  "success_rate": {"backend": "100%", "frontend": "100%"},
+  "retest_needed": false,
+  "full_testing_deferred": true
+}
