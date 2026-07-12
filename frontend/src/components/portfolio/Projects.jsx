@@ -198,13 +198,7 @@ function ProjectCard({ project }) {
                 <img
                   src={project.imageUrl}
                   alt={`${project.name} screenshot`}
-                  className="relative w-full h-auto drop-shadow-[0_30px_60px_rgba(10,132,255,0.35)]"
-                  style={{
-                    WebkitMaskImage:
-                      "radial-gradient(ellipse 92% 94% at 50% 50%, #000 86%, transparent 100%)",
-                    maskImage:
-                      "radial-gradient(ellipse 92% 94% at 50% 50%, #000 86%, transparent 100%)",
-                  }}
+                  className="relative w-full h-auto rounded-[36px] drop-shadow-[0_30px_60px_rgba(10,132,255,0.35)]"
                   loading="lazy"
                   data-testid={`project-image-${project.id}`}
                 />
