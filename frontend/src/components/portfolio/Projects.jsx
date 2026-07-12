@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Sparkles } from "lucide-react";
+import { Sparkles, ArrowUpRight } from "lucide-react";
 import { PROJECTS } from "../../lib/portfolioData";
 
 const SectionHeader = ({ eyebrow, title, subtitle }) => (
@@ -148,6 +148,33 @@ function ProjectCard({ project }) {
           </div>
 
           {/* Featured extras removed per request */}
+
+          {project.appStoreUrl && (
+            <div className="mt-8">
+              <a
+                href={project.appStoreUrl}
+                target="_blank"
+                rel="noreferrer"
+                data-testid={`project-appstore-${project.id}`}
+                className="group inline-flex items-center gap-2.5 rounded-full bg-white text-black px-5 py-3 text-[13.5px] font-medium hover:bg-white/90 transition-colors active:scale-[0.98] shadow-[0_10px_30px_-10px_rgba(255,255,255,0.35)]"
+              >
+                <svg
+                  aria-hidden
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M16.365 1.43c0 1.14-.42 2.24-1.24 3.07-.79.83-2.06 1.44-3.07 1.36-.13-1.09.41-2.24 1.16-3.03.85-.9 2.28-1.55 3.15-1.4zM20.5 17.36c-.55 1.27-1.21 2.53-2.24 2.55-1.02.02-1.35-.6-2.85-.6-1.51 0-1.86.58-2.83.62-1.13.04-1.99-1.37-2.55-2.63-1.17-2.63-2.07-7.44.85-10.72.9-1.02 2.06-1.66 3.32-1.68 1.09-.02 2.13.73 2.81.73.68 0 1.94-.9 3.28-.77.56.02 2.14.23 3.16 1.7-.08.05-1.89 1.11-1.87 3.3.02 2.62 2.3 3.49 2.34 3.51-.03.09-.36 1.24-1.18 2.99z" />
+                </svg>
+                <span>App Store</span>
+                <ArrowUpRight
+                  size={14}
+                  className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                />
+              </a>
+            </div>
+          )}
         </div>
 
         {/* Visual */}
