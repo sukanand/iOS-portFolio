@@ -9,7 +9,7 @@ export const PROFILE = {
   phone: "+91 97631 10826",
   linkedin: "https://www.linkedin.com/in/sukanandyedle/",
   github: "https://github.com/sukanand?tab=repositories",
-  photoUrl: "/assets/profile.jpg",
+  photoUrl: "/assets/profilePic.png",
   resumeUrl: "/assets/SukanandYedle.pdf",
   description:
     "Building secure, scalable, and high-performance iOS applications with over five years of experience delivering enterprise solutions in Banking, FinTech, and Merchant Services.",
