@@ -199,7 +199,7 @@ export default function Hero() {
             >
               <a
                 href={PROFILE.resumeUrl}
-                download="SukanandYedle.pdf"
+                download="Sukanand_Yedle_iOS_Resume.pdf"
                 data-testid="hero-download-btn"
                 className="group inline-flex items-center gap-2 rounded-full bg-[#0A84FF] px-5 py-3 text-[14px] font-medium text-white hover:brightness-110 transition-[filter,transform] active:scale-[0.98] glow-blue"
               >

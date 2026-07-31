@@ -10,7 +10,7 @@ export const PROFILE = {
   linkedin: "https://www.linkedin.com/in/sukanandyedle/",
   github: "https://github.com/sukanand?tab=repositories",
   photoUrl: "/assets/profilePic.png",
-  resumeUrl: "/assets/SukanandYedle.pdf",
+  resumeUrl: "/assets/Sukanand_Yedle_iOS_Resume.pdf",
   description:
     "Building secure, scalable, and high-performance iOS applications with over five years of experience delivering enterprise solutions in Banking, FinTech, and Merchant Services.",
 };
